@@ -1,7 +1,4 @@
--- =============================================================
--- mall 商城数据库（MySQL 8.0）
--- 后台管理端 + 前台商城端 + RBAC + 营销 + 订单超时取消
--- =============================================================
+
 CREATE DATABASE IF NOT EXISTS mall_vue DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE mall_vue;
 
@@ -653,9 +650,7 @@ CREATE TABLE ums_member_browse_history (
 
 SET FOREIGN_KEY_CHECKS = 1;
 
--- =============================================================
--- 初始化数据
--- =============================================================
+
 
 -- 会员等级
 INSERT INTO ums_member_level (id, name, growth_point, default_status, free_freight_point, product_discount) VALUES
