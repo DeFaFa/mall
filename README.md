@@ -4,6 +4,20 @@
 
 > 本项目为个人独立开发的前后端实践项目，用于学习和展示完整电商业务落地，非生产环境部署。
 
+## 界面预览
+
+| 前台首页 | 商品详情 |
+|---|---|
+| ![前台首页](docs/screenshots/01-home.png) | ![商品详情](docs/screenshots/02-product.png) |
+
+| 购物车 | 确认订单 |
+|---|---|
+| ![购物车](docs/screenshots/03-cart.png) | ![确认订单](docs/screenshots/04-checkout.png) |
+
+| 后台仪表盘 | 商品管理 |
+|---|---|
+| ![后台仪表盘](docs/screenshots/05-admin-dashboard.png) | ![商品管理](docs/screenshots/06-admin-products.png) |
+
 ## 功能概览
 
 ### 前台商城
