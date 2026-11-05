@@ -81,10 +81,36 @@ mall/
 └── docker-compose.yml  # MySQL、Redis、RabbitMQ
 ```
 
+## 本地运行
 
+需要 JDK 17、Node 18+ 和 Docker。如果本机已经装了 MySQL、Redis、RabbitMQ，也可以不用 Docker，直接改 `application.yml` 或传环境变量。
 
+先起依赖：
 
+```bash
+docker compose up -d
+```
 
+默认会起 MySQL 3306（`root/root`，库名 `mall_vue`）、Redis 6379、RabbitMQ 5672 和管理台 15672（`guest/guest`）。MySQL 第一次启动时会自动执行 `sql/mall.sql`。
+
+再起后端：
+
+```powershell
+cd mall-backend
+.\mvnw.cmd spring-boot:run
+```
+
+macOS / Linux 用 `./mvnw spring-boot:run`。后端默认 8080。
+
+最后起前端：
+
+```bash
+cd mall-frontend
+npm install
+npm run dev
+```
+
+打开 http://localhost:5173 是前台，http://localhost:5173/admin/login 是后台。
 
 演示账号：管理员 `admin/123456`，运营 `operator/123456`，会员 `13800138000/123456`。
 
