@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #222;
+  background: #f5f6f8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.mall-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.price {
+  color: #e1251b;
+  font-weight: 700;
+}
+
+.price::before {
+  content: '¥';
+  font-size: 0.72em;
+  margin-right: 2px;
+}
+
+.mall-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(20, 20, 30, 0.06);
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 26px 0 16px;
+}
+
+.muted {
+  color: #8b8f99;
+  font-size: 13px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 34px 0 16px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.section-head .more {
+  color: #8b8f99;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: 0 6px 18px rgba(20, 20, 30, 0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(20, 20, 30, 0.12);
+}
+
+.product-card .thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #f2f3f5;
+}
+
+.product-card .body {
+  padding: 14px 16px 18px;
+}
+
+.product-card .name {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  height: 42px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-card .sub {
+  color: #9aa0aa;
+  font-size: 12px;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty-block {
+  text-align: center;
+  padding: 60px 0;
+  color: #9aa0aa;
+  background: #fff;
+  border-radius: 14px;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

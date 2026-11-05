@@ -1,0 +1,26 @@
+package com.macro.mall.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+@TableName("ums_admin")
+public class Admin {
+    @TableId(type = IdType.AUTO)
+    private Long id;
+    private String username;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String password;
+    private String icon;
+    private String email;
+    private String nickName;
+    private String note;
+    private LocalDateTime createTime;
+    private LocalDateTime loginTime;
+    private Integer status;
+}

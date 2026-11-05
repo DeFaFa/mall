@@ -1,0 +1,35 @@
+# Java / Maven
+mall-backend/target/
+*.class
+*.jar
+*.war
+*.log
+
+# Node / Vite
+mall-frontend/node_modules/
+mall-frontend/dist/
+npm-debug.log*
+yarn-error.log*
+
+# Runtime data
+uploads/
+*.rdb
+*.aof
+
+# Local secrets / overrides
+.env
+.env.*
+application-local.yml
+application-*.local.yml
+*.pem
+*.key
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Screenshots / temp
+.screenshots/
