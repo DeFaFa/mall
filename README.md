@@ -8,15 +8,15 @@
 
 | 前台首页 | 商品详情 |
 |---|---|
-| ![前台首页](docs/screenshots/01-home.png) | ![商品详情](docs/screenshots/02-product.png) |
+| ![前台首页](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/01-home.png) | ![商品详情](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/02-product.png) |
 
 | 购物车 | 确认订单 |
 |---|---|
-| ![购物车](docs/screenshots/03-cart.png) | ![确认订单](docs/screenshots/04-checkout.png) |
+| ![购物车](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/03-cart.png) | ![确认订单](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/04-checkout.png) |
 
 | 后台仪表盘 | 商品管理 |
 |---|---|
-| ![后台仪表盘](docs/screenshots/05-admin-dashboard.png) | ![商品管理](docs/screenshots/06-admin-products.png) |
+| ![后台仪表盘](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/05-admin-dashboard.png) | ![商品管理](https://cdn.jsdmirror.com/gh/DeFaFa/mall@main/docs/screenshots/06-admin-products.png) |
 
 ## 功能
 
