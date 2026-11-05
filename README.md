@@ -112,17 +112,16 @@ npm run dev
 
 打开 http://localhost:5173 是前台，http://localhost:5173/admin/login 是后台。
 
-演示账号：
-
-- 管理员：`admin / 123456`
-- 运营：`operator / 123456`
-- 会员：`13800138000 / 123456`
+演示账号：管理员 `admin/123456`，运营 `operator/123456`，会员 `13800138000/123456`。
 
 如果 MySQL 不在本机默认端口，改 `MYSQL_URL`、`MYSQL_USERNAME`、`MYSQL_PASSWORD` 就行。订单超时时间可以在 `application.yml` 的 `mall.order.timeout-minutes` 里改，也可以在后台“订单设置”里改，后者按秒存。
 
 ## 补充说明
 
-- 支付宝是模拟的，订单状态流转和回调幂等逻辑保留了，接真实 SDK 时要替换支付网关和验签。
-- 商品搜索用的是 MySQL `LIKE`，没有接 Elasticsearch。
-- RabbitMQ 没启动时，下单还能正常用，只是订单不会自动超时取消，需要手动取消。
-- 演示账号和默认密码只适合本地跑，真要放到公网得先改掉。
+支付宝是模拟的，订单状态流转和回调幂等逻辑保留了，接真实 SDK 时要替换支付网关和验签。
+
+商品搜索用的是 MySQL `LIKE`，没有接 Elasticsearch。
+
+RabbitMQ 没启动时，下单还能正常用，只是订单不会自动超时取消，需要手动取消。
+
+演示账号和默认密码只适合本地跑，真要放到公网得先改掉。
